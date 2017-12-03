@@ -2,7 +2,6 @@ package org.launchcode.quizbuilder.models;
 
 import com.sun.istack.internal.NotNull;
 import javax.validation.constraints.Size;
-import java.util.ArrayList;
 
 public abstract class Question {
 
@@ -31,5 +30,6 @@ public abstract class Question {
 
     public void setCorrect(boolean correct) {
         isCorrect = correct;
+    }
     }
 }

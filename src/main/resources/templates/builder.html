@@ -7,11 +7,10 @@
 <body>
 
 <div>
-    <label                                                                                                                                                      >Question Type</label>
+    <label th:for = "qType">What type of question would you like to add?</label>                                                                                                                                                      >Question Type</label>
     <select th:field = "*{qType}">
-        <option>Multiple Choice</option>
-        <option>True or False</option>
-        <option>Checkmark</option>
+        <option th:each = "type : ${questionTypes}"
+                th:text =
     </select>
 </div>
 

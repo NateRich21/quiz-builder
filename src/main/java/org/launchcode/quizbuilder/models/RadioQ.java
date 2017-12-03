@@ -23,6 +23,7 @@ public class RadioQ extends Question {
         super(questionText, isCorrect);
         this.choices = choices;
         this.answer = answer;
+
     }
 
     public int getNumberOfChoices() {
