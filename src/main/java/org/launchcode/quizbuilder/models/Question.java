@@ -31,5 +31,5 @@ public abstract class Question {
     public void setCorrect(boolean correct) {
         isCorrect = correct;
     }
-    }
+
 }
