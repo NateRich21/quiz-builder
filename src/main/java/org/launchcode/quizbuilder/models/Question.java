@@ -3,7 +3,7 @@ package org.launchcode.quizbuilder.models;
 import com.sun.istack.internal.NotNull;
 import javax.validation.constraints.Size;
 
-public abstract class Question {
+public abstract class Question implements QuestionInterface{
 
     @NotNull
     @Size(min=1, message = "Question field may not be left empty")
@@ -15,21 +15,23 @@ public abstract class Question {
         this.isCorrect = isCorrect;
     }
 
+    @Override
+    public void setQuestionText() {
+
+    }
+
+    @Override
     public String getQuestionText() {
-        return questionText;
+        return null;
     }
 
-    public void setQuestionText(String questionText) {
-        this.questionText = questionText;
+    @Override
+    public void setIsCorrect() {
+
     }
 
-
-    public boolean isCorrect() {
-        return isCorrect;
+    @Override
+    public String getIsCorrect() {
+        return null;
     }
-
-    public void setCorrect(boolean correct) {
-        isCorrect = correct;
-    }
-
 }

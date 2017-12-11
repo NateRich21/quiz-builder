@@ -4,7 +4,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.util.ArrayList;
 
-public class RadioQ extends Question {
+public class RadioQ extends Question implements QuestionInterface {
 
     @NotNull
     @Size(min=2)
