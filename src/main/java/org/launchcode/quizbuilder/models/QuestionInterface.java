@@ -5,10 +5,10 @@ import javax.validation.constraints.Size;
 
 public interface QuestionInterface {
 
-    public void setQuestionText();
+    public void setQuestionText(String questionText);
     public String getQuestionText();
 
-    public void setIsCorrect();
-    public String getIsCorrect();
+    public void setIsCorrect(boolean isCorrect);
+    public boolean getIsCorrect();
 
 }

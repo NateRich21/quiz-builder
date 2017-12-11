@@ -4,7 +4,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.util.ArrayList;
 
-public class RadioQ extends Question implements QuestionInterface {
+public class RadioQ extends Question {
 
     @NotNull
     @Size(min=2)
@@ -41,4 +41,8 @@ public class RadioQ extends Question implements QuestionInterface {
     public void setChoices(ArrayList<String> choices) {
         this.choices = choices;
     }
+
+    public String getAnswer() { return answer; }
+
+    public void setAnswer(String answer) { this.answer = answer; }
 }

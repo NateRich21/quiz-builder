@@ -16,22 +16,15 @@ public abstract class Question implements QuestionInterface{
     }
 
     @Override
-    public void setQuestionText() {
-
-    }
+    public void setQuestionText(String questionText) { this.questionText = questionText; }
 
     @Override
-    public String getQuestionText() {
-        return null;
-    }
+    public String getQuestionText() { return questionText; }
 
     @Override
-    public void setIsCorrect() {
-
-    }
+    public void setIsCorrect(boolean isCorrect) { this.isCorrect = isCorrect; }
 
     @Override
-    public String getIsCorrect() {
-        return null;
-    }
+    public boolean getIsCorrect() { return isCorrect; }
+
 }
